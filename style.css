@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: rgb(232, 233, 236);
+}
+.overall_container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1.5fr;
+}
+/* LEFT PANEL */
+img {
+}
+.container {
+}
+.dual_container {
+}
+.icon {
+}
+.button {
+}
+/* LEFT PANEL */
+
+/* Nifemi's SECTION */
+/* Nifemi's SECTION */
+
+/* RIGHT PANEL */
+/* RIGHT PANEL */
