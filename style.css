@@ -6,11 +6,11 @@
 body {
   background-color: black;
   color: rgb(232, 233, 236);
-}
-.overall_container {
   display: grid;
   grid-template-columns: 1fr 2fr 1.5fr;
+  margin-inline: 4rem;
 }
+
 /* LEFT PANEL */
 img {
 }
@@ -28,4 +28,49 @@ img {
 /* Nifemi's SECTION */
 
 /* RIGHT PANEL */
+
+.widgets {
+  padding: 10px;
+}
+.widgets_input > input {
+  width: 100%;
+  border-radius: 30px;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  background-color: rgb(32, 35, 40)
+  border: none;
+}
+.widgets .trends-for-you {
+  border-radius: 15px;
+}
+.trends-for-you {
+  background-color: rgb(23, 24, 28);
+}
+
+.trends-for-you-block {
+  padding: 10px 15px;
+}
+
+.trends-for-you-heading {
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+}
+
+.trends-for-you-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* font-size: 13px;
+  font-weight: 300;
+  color: #657786; */
+}
+
+.trends-for-you-name {
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
 /* RIGHT PANEL */
