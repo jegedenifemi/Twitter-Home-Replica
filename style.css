@@ -18,9 +18,16 @@ body {
   padding-inline-end: 2rem;
   border-right: 1px solid rgb(32, 35, 40);
 }
+.left_section nav {
+  height: 100vh;
+  padding-block: 1rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
 
 .twitter_logo {
-  margin-top: 1.5rem;
+  margin-left: -0.5rem;
 }
 .container > button {
   background-color: rgb(29, 155, 240);
