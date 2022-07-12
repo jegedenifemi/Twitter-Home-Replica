@@ -84,6 +84,97 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(0.5rem);
 }
+.nt_cont {
+  padding: 1rem;
+}
+.nt_head {
+  position: relative;
+  z-index: -1;
+}
+.nt_head > select {
+  background-color: inherit;
+  color: rgb(29, 155, 240);
+  border-radius: 50px;
+  padding: 0.2rem;
+  border: 1px solid rgba(128, 128, 128, 0.541);
+  outline: none;
+  position: absolute;
+  top: 0.5rem;
+  left: 3.7rem;
+}
+.nt_main {
+  margin-left: 3.7rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.541);
+  padding-block-end: 1rem;
+}
+.nt_main > textarea {
+  background-color: inherit;
+  border: none;
+}
+.nt_main > textarea::placeholder {
+  font-size: large;
+}
+.nt_main > h5 {
+  color: rgb(29, 155, 240);
+}
+.nt_media {
+  margin-left: 3.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 0;
+}
+.nt_media_icons > img {
+  width: 1.3rem;
+  margin-right: 0.8rem;
+}
+.nt_media > button {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  font-weight: 500;
+  font-size: medium;
+  border-radius: 50px;
+  padding: 0.6rem 1.2rem;
+}
+.show_tweets {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.541);
+  border-top: 1px solid rgba(128, 128, 128, 0.541);
+  padding-block: 1rem;
+}
+.show_tweets > p {
+  text-align: center;
+  color: rgb(29, 155, 240);
+}
+.tweet_container {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.541);
+  padding: 1rem;
+}
+.tweet_head {
+  display: flex;
+  gap: 0.5rem;
+  /* border: 1px solid red; */
+}
+.tweet_head_txt > p:nth-child(1) > span,
+.tweet_head a {
+  color: rgb(114, 116, 121);
+}
+.tweet_foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.tweet_foot_icons {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+.tweet_foot_icons p {
+  font-size: small;
+  color: rgb(128, 128, 128);
+}
+.tweet_foot img {
+  width: 1.2rem;
+}
 /* MID SECTION ENDS*/
 
 /* RIGHT PANEL STARTS */
@@ -190,8 +281,6 @@ body {
   gap: 1rem;
   padding: 10px 15px;
   /*margin-left: -1em;*/
-
-
 }
 
 .follow-button {
@@ -203,7 +292,7 @@ body {
   border: none;
 }
 
-.follow-content .follow-button-align{
+.follow-content .follow-button-align {
   width: 80%;
   margin: 1rem;
   border-radius: 20px;
@@ -211,7 +300,6 @@ body {
   margin-top: -0.3em;
   font-weight: 600;
   border: none;
-
 }
 
 .more-link {
@@ -280,6 +368,5 @@ body {
   padding-top: 0.3em;
   line-height: 1.8em;
 }
-
 
 /* RIGHT PANEL ENDS*/
