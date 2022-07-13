@@ -83,46 +83,64 @@ body {
   top: 0;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(0.5rem);
+  z-index: 100;
+}
+.mid_section nav a {
+  text-decoration: none;
+  color: white;
 }
 .nt_cont {
   padding: 1rem;
 }
-.nt_head {
-  position: relative;
-  z-index: -1;
+.nt_main {
+  margin-left: 3.7rem;
+  margin-top: -2rem;
+  padding-block-end: 1rem;
+  display: flex;
+  flex-direction: column;
 }
-.nt_head > select {
+.nt_main > select {
   background-color: inherit;
   color: rgb(29, 155, 240);
   border-radius: 50px;
   padding: 0.2rem;
   border: 1px solid rgba(128, 128, 128, 0.541);
   outline: none;
-  position: absolute;
-  top: 0.5rem;
-  left: 3.7rem;
+  margin-bottom: 1rem;
+  width: fit-content;
+  order: -1;
+  display: none;
 }
-.nt_main {
-  margin-left: 3.7rem;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.541);
-  padding-block-end: 1rem;
-}
+
 .nt_main > textarea {
   background-color: inherit;
+  font-size: x-large;
+  color: white;
   border: none;
+  width: 100%;
 }
-.nt_main > textarea::placeholder {
-  font-size: large;
+.nt_main > textarea:focus {
+  outline: none;
 }
 .nt_main > h5 {
   color: rgb(29, 155, 240);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.541);
+  padding-block: 1rem;
+  display: none;
 }
+.nt_main > textarea:focus ~ #audience {
+  display: block;
+}
+.nt_main > textarea:focus-within ~ h5 {
+  display: block;
+}
+
 .nt_media {
   margin-left: 3.7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.7rem 0;
+  padding: 0 0 0.7rem;
 }
 .nt_media_icons > img {
   width: 1.3rem;
@@ -140,6 +158,7 @@ body {
   border-bottom: 1px solid rgba(128, 128, 128, 0.541);
   border-top: 1px solid rgba(128, 128, 128, 0.541);
   padding-block: 1rem;
+  cursor: pointer;
 }
 .show_tweets > p {
   text-align: center;
@@ -148,20 +167,38 @@ body {
 .tweet_container {
   border-bottom: 1px solid rgba(128, 128, 128, 0.541);
   padding: 1rem;
+  cursor: pointer;
 }
 .tweet_head {
   display: flex;
   gap: 0.5rem;
-  /* border: 1px solid red; */
 }
 .tweet_head_txt > p:nth-child(1) > span,
 .tweet_head a {
   color: rgb(114, 116, 121);
 }
+.tweet_head_txt > p:nth-child(1) {
+  font-size: 16px;
+  font-weight: 600;
+}
+.tweet_head_txt > p:nth-child(1) > span {
+  font-weight: normal;
+  font-size: 14px;
+}
+.tweet_head a {
+  margin-left: auto;
+}
+.tweet_head_txt > p:nth-child(2) {
+  font-weight: 400;
+}
+.tweet_container > .tweet_img {
+  margin: 0.8rem 0 0 3.7rem;
+}
 .tweet_foot {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-top: 0.4rem;
 }
 .tweet_foot_icons {
   display: flex;
