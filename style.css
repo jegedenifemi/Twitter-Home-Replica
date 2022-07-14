@@ -560,7 +560,6 @@ body {
 /* RIGHT PANEL ENDS*/
 
 /* MEDIA QUERY BEGINS FOR MOBILE (320px-499px) SCREEN SIZE */
-
 @media (min-width: 320px) and (max-width: 499px) {
   body {
     display: flex;
