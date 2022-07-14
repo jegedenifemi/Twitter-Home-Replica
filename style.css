@@ -189,6 +189,21 @@ body {
   padding: 1rem;
   cursor: pointer;
 }
+.tweet_container > .pre_tweet {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin: 0 0 0.5rem 1.5rem;
+}
+.pre_tweet img {
+  width: 1rem;
+}
+.pre_tweet p {
+  color: rgb(114, 116, 121);
+  font-size: 14px;
+  font-weight: 600;
+}
 .tweet_head {
   display: flex;
   gap: 0.5rem;
@@ -229,7 +244,8 @@ body {
   font-size: small;
   color: rgb(128, 128, 128);
 }
-.tweet_foot img {
+.tweet_foot img,
+.tweet_head_txt p img {
   width: 1.2rem;
 =======
 >>>>>>> Stashed changes
