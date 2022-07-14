@@ -97,12 +97,20 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 1rem;
   padding: 1rem;
   position: sticky;
   top: 0;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(0.5rem);
   z-index: 100;
+}
+.mid_section > nav > .homestar_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 .mid_section nav a {
   text-decoration: none;
@@ -160,7 +168,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 0 0.7rem;
-<<<<<<< Updated upstream
 }
 .nt_media_icons > img {
   width: 1.3rem;
@@ -247,8 +254,6 @@ body {
 .tweet_foot img,
 .tweet_head_txt p img {
   width: 1.2rem;
-=======
->>>>>>> Stashed changes
 }
 .nt_media_icons > img {
   width: 1.3rem;
@@ -453,10 +458,7 @@ body {
   grid-template-columns: 1fr 5fr 3fr;
   gap: 1rem;
   padding: 10px 15px;
-<<<<<<< Updated upstream
   /*margin-left: -1em;*/
-=======
->>>>>>> Stashed changes
 }
 
 .follow-button {
@@ -549,55 +551,41 @@ body {
   line-height: 1.6em;
 }
 
-<<<<<<< Updated upstream
-=======
 .fa-solid:hover {
   background-color: #1d9cf031;
   border-radius: 5px;
   color: #1d9bf0;
 }
 
->>>>>>> Stashed changes
 /* RIGHT PANEL ENDS*/
 
-/* MEDIA QUERY BEGINS FOR 320px and 499px SCREEN SIZE */
+/* MEDIA QUERY BEGINS FOR MOBILE (320px-499px) SCREEN SIZE */
 
-@media (max-width: 499px) {
+@media (min-width: 320px) and (max-width: 499px) {
   body {
-    background-color: black;
-    color: rgb(232, 233, 236);
     display: flex;
     flex-direction: column;
-    font-family: "Poppins", sans-serif;
-    margin-inline: 0.1rem 0.1rem;
+    margin-inline: 0.1rem;
   }
 
   /* LEFT SECTION BEGINS */
-  .left_section {
+  .left_section,
+  .nt_cont,
+  .show_tweets,
+  .right_section {
     display: none;
   }
   /* LEFT SECTION ENDS */
 
   /* MID SECTION BEGINS*/
+
   .mid_section .icon-header {
     display: inline-block;
   }
 
-  .home-header {
-    margin-left: -19em;
-    font-size: 16.5px;
-    font-weight: 550;
-  }
-
-  .star-header {
-    width: 1.3em;
-    margin-top: -1em;
-  }
-
   .mid_section .icon-footer {
     display: flex;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-inline: 1.5em;
     position: sticky;
     bottom: 0;
     background-color: black;
@@ -605,63 +593,6 @@ body {
     border-top: 1px solid rgba(128, 128, 128, 0.541);
   }
   /* MID SECTION ENDS */
-
-  /* RIGHT SECTION BEGINS*/
-  .right_section {
-    display: none;
-  }
-  /* RIGHT SECTION ENDS */
 }
 
-@media (max-width: 320px) {
-  body {
-    background-color: black;
-    color: rgb(232, 233, 236);
-    display: flex;
-    flex-direction: column;
-    font-family: "Poppins", sans-serif;
-    margin-inline: 0.1rem 0.1rem;
-  }
-
-  /* LEFT SECTION BEGINS */
-  .left_section {
-    display: none;
-  }
-  /* LEFT SECTION ENDS */
-
-  /* MID SECTION BEGINS*/
-  .mid_section .icon-header {
-    display: inline-block;
-  }
-
-  .home-header {
-    margin-left: -8em;
-    font-size: 16.5px;
-    font-weight: 550;
-  }
-
-  .star-header {
-    width: 1.3em;
-    margin-top: -1em;
-  }
-
-  .mid_section .icon-footer {
-    display: flex;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    position: sticky;
-    bottom: 0;
-    background-color: black;
-    z-index: 100;
-    border-top: 1px solid rgba(128, 128, 128, 0.541);
-  }
-  /* MID SECTION ENDS */
-
-  /* RIGHT SECTION BEGINS*/
-  .right_section {
-    display: none;
-  }
-  /* RIGHT SECTION ENDS */
-}
-
-/* MEDIA QUERY ENDS FOR 320px and 499px SCREEN SIZE */
+/* MEDIA QUERY ENDS FOR MOBILE (320px-499px) SCREEN SIZE */
