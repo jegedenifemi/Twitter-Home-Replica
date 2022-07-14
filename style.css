@@ -556,9 +556,75 @@ body {
   border-radius: 5px;
   color: #1d9bf0;
 }
+.content {
+  display: none;
+  background-color: black;
+  outline-color: gray;
+  border-radius: 12px;
+  color: white;
+}
+.two {
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+}
+h3 {
+  margin-left: 12%;
+}
+
+.collapsible:hover + .content {
+  display: block;
+}
+.collapsible {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  border: 1px solid #fff;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 12px;
+}
 
 /* RIGHT PANEL ENDS*/
 
+@media only screen and (max-width: 1281px) {
+  .left_section h2 {
+    display: none;
+  }
+
+  .right_section h4 {
+    display: none;
+  }
+
+  .icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 1004px) {
+  .right_section {
+    display: none;
+  }
+
+  .left_section h2 {
+    display: none;
+  }
+
+  .right_section h4 {
+    display: none;
+  }
+
+  .left_section content {
+    display: none;
+  }
+
+  .icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /* MEDIA QUERY BEGINS FOR MOBILE (320px-499px) SCREEN SIZE */
 @media (min-width: 320px) and (max-width: 499px) {
   body {
