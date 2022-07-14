@@ -11,7 +11,6 @@
       type="image/x-icon"
       href="img/svgs/twitter_logo_blue.svg"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -30,13 +29,13 @@
       <nav>
         <div class="twitter_logo">
           <a href="index.html"
-            ><img src="/img/svgs/twitter_logo.svg" alt="Twitter logo"
+            ><img src="./img/svgs/twitter_logo.svg" alt="Twitter logo"
           /></a>
         </div>
         <div class="container">
           <div class="dual_container">
             <div class="icon">
-              <img src="/img/svgs/home_icon.svg" alt="" />
+              <img src="./img/svgs/home_icon.svg" alt="" />
             </div>
             <div>
               <h2>Home</h2>
@@ -44,31 +43,31 @@
           </div>
           <div class="dual_container">
             <div class="icon">
-              <img src="/img/svgs/explore_icon.svg" alt="" />
+              <img src="./img/svgs/explore_icon.svg" alt="" />
             </div>
             <div>
               <h2>Explore</h2>
             </div>
           </div>
-          <div class="dual_container">
+          <div class="dual_container" id="dual_container2">
             <div class="icon">
-              <img src="/img/svgs/notification_icon.svg" alt="" />
+              <img src="./img/svgs/notification_icon.svg" alt="" />
             </div>
             <div>
               <h2>Notifications</h2>
             </div>
           </div>
-          <div class="dual_container">
+          <div class="dual_container" id="dual_container2">
             <div class="icon">
-              <img src="/img/svgs/message_icon.svg" alt="" />
+              <img src="./img/svgs/message_icon.svg" alt="" />
             </div>
             <div>
               <h2>Messages</h2>
             </div>
           </div>
-          <div class="dual_container">
+          <div class="dual_container" id="dual_container2">
             <div class="icon">
-              <img src="/img/svgs/bookmark_icon.svg" alt="" />
+              <img src="./img/svgs/bookmark_icon.svg" alt="" />
             </div>
             <div>
               <h2>Bookmarks</h2>
@@ -76,7 +75,7 @@
           </div>
           <div class="dual_container">
             <div class="icon">
-              <img src="/img/svgs/lists_icon.svg" alt="" />
+              <img src="./img/svgs/lists_icon.svg" alt="" />
             </div>
             <div>
               <h2>Lists</h2>
@@ -84,7 +83,7 @@
           </div>
           <div class="dual_container">
             <div class="icon">
-              <img src="/img/svgs/profile_icon.svg" alt="" />
+              <img src="./img/svgs/profile_icon.svg" alt="" />
             </div>
             <div>
               <h2>Profile</h2>
@@ -92,7 +91,7 @@
           </div>
           <div class="dual_container">
             <div class="icon">
-              <img src="/img/svgs/more_menu_icon.svg" alt="" />
+              <img src="./img/svgs/more_menu_icon.svg" alt="" />
             </div>
             <div>
               <h2>More</h2>
@@ -104,7 +103,7 @@
 
           <div class="user_container">
             <img
-              src="img/svgs/avatar-7.svg"
+              src="./img/svgs/avatar-7.svg"
               alt=""
               style="border-radius: 50%; width: 2.5rem"
             />
@@ -122,13 +121,24 @@
     <!-- MID SECTION STARTS -->
     <section class="mid_section">
       <nav>
-        <h3><a href="index.html">Home</a></h3>
-        <img src="./img/svgs/preferences.svg" alt="Preferences" />
+        <img
+          src="img/svgs/avatar-5.svg"
+          alt=""
+          style="border-radius: 50%; width: 2rem"
+          class="icon-header"
+        />
+        <div class="homestar_container">
+          <h3 class="home-header"><a href="index.html">Home</a></h3>
+          <img
+            src="./img/svgs/preferences.svg"
+            class="star-header"
+            alt="Preferences"
+          />
+        </div>
       </nav>
-
       <div class="nt_cont">
         <img
-          src="img/svgs/avatar-7.svg"
+          src="./img/svgs/avatar-7.svg"
           alt=""
           style="border-radius: 50%; width: 3rem"
         />
@@ -183,11 +193,10 @@
             <div class="tweet_head_txt">
               <p>
                 floyd
-                <img src="img/svgs/private_account_icon.svg" alt="" /><span>
+                <img src="./img/svgs/private_account_icon.svg" alt="" /><span>
                   @manlikeaj . 14m</span
                 >
               </p>
-
               <p>Thank you God for keeping things running smoothly.</p>
             </div>
             <a href=""><i class="fa-solid fa-ellipsis"></i></a>
@@ -220,7 +229,7 @@
         <div class="tweet_container">
           <div class="tweet_head">
             <img
-              src="img/svgs/avatar-6.svg"
+              src="./img/svgs/avatar-6.svg"
               alt=""
               style="border-radius: 50%; width: 3rem; height: 3rem"
             />
@@ -279,7 +288,7 @@
         <div class="tweet_container">
           <div class="tweet_head">
             <img
-              src="img/svgs/avatar-2.svg"
+              src="./img/svgs/avatar-2.svg"
               alt=""
               style="border-radius: 50%; width: 3rem; height: 3rem"
             />
@@ -391,7 +400,7 @@
         <div class="tweet_container">
           <div class="tweet_head">
             <img
-              src="img/svgs/avatar-1.svg"
+              src="./img/svgs/avatar-1.svg"
               alt=""
               style="border-radius: 50%; width: 3rem; height: 3rem"
             />
@@ -438,7 +447,7 @@
           </div>
           <div class="tweet_head">
             <img
-              src="img/svgs/avatar-5.svg"
+              src="./img/svgs/avatar-5.svg"
               alt=""
               style="border-radius: 50%; width: 3rem; height: 3rem"
             />
@@ -477,16 +486,59 @@
         <div class="tweet_container">
           <div class="pre_tweet">
             <img src="./img/svgs/retweet_icon.svg" alt="" />
-            <p>Asake Alamala Retweeted</p>
+            <p>John Weak Retweeted</p>
           </div>
           <div class="tweet_head">
             <img
-              src="img/svgs/avatar-4.svg"
+              src="./img/svgs/avatar-1.svg"
               alt=""
               style="border-radius: 50%; width: 3rem; height: 3rem"
             />
             <div class="tweet_head_txt">
-              <p>Certified baddie<span> @bade__ . 4h</span></p>
+              <p>Pietro<span> @manlike_p . 4h</span></p>
+
+              <p>Leaving the trenches soon 🙏🏾.</p>
+            </div>
+            <a href=""><i class="fa-solid fa-ellipsis"></i></a>
+          </div>
+
+          <div class="tweet_img" style="display: none">
+            <img src="" alt="" style="width: 100%; height: 100%" />
+          </div>
+
+          <div class="tweet_foot">
+            <div class="tweet_foot_icons">
+              <img src="./img/svgs/comment_icon.svg" alt="" />
+              <p>12</p>
+            </div>
+
+            <div class="tweet_foot_icons">
+              <img src="./img/svgs/retweet_icon.svg" alt="" />
+              <p>22</p>
+            </div>
+
+            <div class="tweet_foot_icons">
+              <img src="./img/svgs/like_tweet_icon.svg" alt="" />
+              <p>54</p>
+            </div>
+
+            <img src="./img/svgs/share_tweet_icon.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="tweet_container">
+          <div class="pre_tweet">
+            <img src="./img/svgs/retweet_icon.svg" alt="" />
+            <p>Asake Alamala Retweeted</p>
+          </div>
+          <div class="tweet_head">
+            <img
+              src="./img/svgs/avatar-4.svg"
+              alt=""
+              style="border-radius: 50%; width: 3rem; height: 3rem"
+            />
+            <div class="tweet_head_txt">
+              <p>badeBaddie<span> @bade__ . 4h</span></p>
 
               <p>Signed out today, never been happier💃.</p>
             </div>
@@ -520,7 +572,7 @@
         <div class="tweet_container">
           <div class="tweet_head">
             <img
-              src="img/svgs/avatar-3.svg"
+              src="./img/svgs/avatar-3.svg"
               alt=""
               style="border-radius: 50%; width: 3rem; height: 3rem"
             />
@@ -529,6 +581,7 @@
 
               <p>This weather isn't for the weak.</p>
             </div>
+
             <a href=""><i class="fa-solid fa-ellipsis"></i></a>
           </div>
 
@@ -556,7 +609,15 @@
           </div>
         </div>
       </div>
+
+      <nav class="icon-footer">
+        <img src="img/svgs/home_icon.svg" alt="home-icon" />
+        <img src="img/svgs/search_icon.svg" alt="search-icon" />
+        <img src="img/svgs/notification_icon.svg" alt="notification-icon" />
+        <img src="img/svgs/message_icon.svg" alt="message-icon" />
+      </nav>
     </section>
+
     <!-- MID SECTION ENDS -->
 
     <!-- RIGHT section starts -->
@@ -634,14 +695,14 @@
         <div class="follow-content">
           <a href="#"
             ><img
-              src="img/svgs/avatar-5.svg"
+              src="./img/svgs/avatar-5.svg"
               alt="avatar-5"
-              style="width: 2.5rem"
+              style="border-radius: 50%; width: 2.5rem"
           /></a>
           <div>
             <a href="#"
               ><h4 class="follow-name" style="font-family: Arial, FontAwesome">
-                Crypto.com NFT &#Xf0a3;
+                Crypto.com NFT <span style="color: aqua"> &#Xf0a3;</span>
               </h4></a
             >
             <a href="#"><p class="follow-username">@cryptocomnft</p></a>
@@ -655,7 +716,7 @@
         <div class="follow-content">
           <a href="#"
             ><img
-              src="img/svgs/avatar-6.svg"
+              src="./img/svgs/avatar-6.svg"
               alt="avater-4"
               style="width: 2.5rem"
               background-colour="white"
@@ -663,7 +724,7 @@
           <div>
             <a href="#"
               ><h4 class="follow-name" style="font-family: Arial, FontAwesome">
-                Sodiq 🎭 The Lvzy
+                Sodiq <span style="color: gold">🎭 </span> The Lvzy
               </h4></a
             >
             <a href="#"><p class="follow-username">@cryptocomnft</p></a>
@@ -674,17 +735,17 @@
         <div class="follow-content">
           <a href="#"
             ><img
-              src="img/svgs/avatar-2.svg"
+              src="./img/svgs/avatar-2.svg"
               alt="avatar-2"
-              style="width: 2.5rem"
+              style="width: 2.8rem"
           /></a>
           <div>
             <a href="#"
               ><h4 class="follow-name" style="font-family: Arial, FontAwesome">
-                Crypto.com NFT
+                Jimzz_r Ezeh
               </h4></a
             >
-            <a href="#"><p class="follow-username">@cryptocomnft</p></a>
+            <a href="#"><p class="follow-username">@jimzz_r</p></a>
           </div>
           <button class="follow-button-align">Follow</button>
         </div>
@@ -730,6 +791,19 @@
         </p>
       </nav>
     </section>
+<div class ="collapsible">
+   <h3>message<h3><div>  <i class="fa-regular fa-envelope"></i>
+<i class="fa-solid fa-angles-up"></i></div>
+  
+
+</div>
+
+
+ <div class="content">
+    <div class = "two"><i class="fa-solid fa-envelope-circle-check"></i> <h3>message requests </h3></div>
+<div class="two"><i class="fa-regular fa-circle"></i><h3>tracy❤️</h3><p>@tracy_clear  .jul 12</p></div>
+<div class = "two"><i class="fa-solid fa-circle"></i><h3>Tunde😎</h3><p>@theonlytunde .jul 10</p></div>
+ </div>
     <!-- RIGHT section ends here -->
   </body>
 </html>

@@ -27,7 +27,8 @@ body {
 }
 
 .twitter_logo {
-  margin-left: -0.5rem;
+  margin-left: -0.3rem;
+  margin-bottom: 0.5em;
 }
 .container {
   position: relative;
@@ -37,6 +38,7 @@ body {
   background-color: rgb(29, 155, 240);
   width: 100%;
   padding: 1rem;
+  margin-top: 0.5em;
   border-radius: 30px;
 }
 .container > button > a {
@@ -48,12 +50,12 @@ body {
 .dual_container {
   display: flex;
   flex-direction: row;
-  margin-block: 1.1rem;
   gap: 1rem;
   cursor: pointer;
+  padding: 0.5em;
 }
 .dual_container h2 {
-  font-size: larger;
+  font-size: 20px;
   font-weight: 400;
 }
 .user_container {
@@ -61,7 +63,7 @@ body {
   grid-template-columns: 1fr 8fr 1fr;
   gap: 0.5rem;
   position: absolute;
-  bottom: 4rem;
+  bottom: 3rem;
 }
 .user_container_txt h4 {
   font-weight: 600;
@@ -69,6 +71,23 @@ body {
 .user_container_txt p {
   font-size: 14px;
   color: rgb(99, 101, 106);
+}
+.container .dual_container:hover {
+  background-color: rgba(99, 104, 107, 0.33);
+  border-radius: 30px;
+  width: 60%;
+}
+
+#dual_container2:hover {
+  background-color: rgba(99, 104, 107, 0.33);
+  border-radius: 30px;
+  width: 85%;
+}
+
+.twitter_logo:hover {
+  background-color: #1d9cf031;
+  width: 2.5em;
+  border-radius: 100px;
 }
 
 /* LEFT SECTION ENDS */
@@ -78,12 +97,20 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 1rem;
   padding: 1rem;
   position: sticky;
   top: 0;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(0.5rem);
   z-index: 100;
+}
+.mid_section > nav > .homestar_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 .mid_section nav a {
   text-decoration: none;
@@ -228,6 +255,104 @@ body {
 .tweet_head_txt p img {
   width: 1.2rem;
 }
+.nt_media_icons > img {
+  width: 1.3rem;
+  margin-right: 0.8rem;
+}
+.nt_media > button {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  font-weight: 500;
+  font-size: medium;
+  border-radius: 50px;
+  padding: 0.6rem 1.2rem;
+  border: none;
+}
+.show_tweets {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.541);
+  border-top: 1px solid rgba(128, 128, 128, 0.541);
+  padding-block: 1rem;
+  cursor: pointer;
+}
+.show_tweets > p {
+  text-align: center;
+  color: rgb(29, 155, 240);
+}
+.tweet_container {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.541);
+  padding: 1rem;
+  cursor: pointer;
+}
+.tweet_container > .pre_tweet {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin: 0 0 0.5rem 1.5rem;
+}
+.pre_tweet img {
+  width: 1rem;
+}
+.pre_tweet p {
+  color: rgb(114, 116, 121);
+  font-size: 14px;
+  font-weight: 600;
+}
+.tweet_head {
+  display: flex;
+  gap: 0.5rem;
+}
+.tweet_head_txt > p:nth-child(1) > span,
+.tweet_head a {
+  color: rgb(114, 116, 121);
+}
+.tweet_head_txt > p:nth-child(1) {
+  font-size: 16px;
+  font-weight: 600;
+}
+.tweet_head_txt > p:nth-child(1) > span {
+  font-weight: normal;
+  font-size: 14px;
+}
+.tweet_head a {
+  margin-left: auto;
+}
+.tweet_head_txt > p:nth-child(2) {
+  font-weight: 400;
+}
+.tweet_container > .tweet_img {
+  margin: 0.8rem 0 0 3.7rem;
+}
+.tweet_foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 0.4rem;
+}
+.tweet_foot_icons {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+.tweet_foot_icons p {
+  font-size: small;
+  color: rgb(128, 128, 128);
+}
+.tweet_foot img,
+.tweet_head_txt p img {
+  width: 1.2rem;
+}
+
+/* Added part rachy - MID SECTION */
+
+.mid_section .icon-header {
+  display: none;
+}
+
+.mid_section .icon-footer {
+  display: none;
+}
+
 /* MID SECTION ENDS*/
 
 /* RIGHT PANEL STARTS */
@@ -379,6 +504,10 @@ body {
   padding-bottom: 0.2em;
 }
 
+.follow-content .follow-name:hover {
+  text-decoration: underline;
+}
+
 .follow-content p {
   font-size: 13px;
   color: rgb(99, 101, 106);
@@ -401,13 +530,13 @@ body {
 
 .container-link a {
   text-decoration: none;
-  color: rgb(114, 116, 121);
-  font-size: 13.5px;
+  color: rgb(127, 127, 129);
+  font-size: 12.5px;
   font-weight: 300;
 }
 
 .container-link .page-link {
-  padding-right: 0.5em;
+  padding-right: 0.3em;
 }
 
 .container-link a:hover {
@@ -416,10 +545,45 @@ body {
 
 .container-link p {
   color: rgb(114, 116, 121);
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 300;
   padding-top: 0.3em;
-  line-height: 1.8em;
+  line-height: 1.6em;
+}
+
+.fa-solid:hover {
+  background-color: #1d9cf031;
+  border-radius: 5px;
+  color: #1d9bf0;
+}
+.content {
+  display: none;
+  background-color: black;
+  outline-color: gray;
+  border-radius: 12px;
+  color: white;
+}
+.two {
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+}
+h3 {
+  margin-left: 12%;
+}
+
+.collapsible:hover + .content {
+  display: block;
+}
+.collapsible {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  border: 1px solid #fff;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 12px;
 }
 
 /* RIGHT PANEL ENDS*/
@@ -427,6 +591,15 @@ body {
 @media only screen and (max-width: 1281px) {
   .left_section h2 {
     display: none;
+  }
+
+  .right_section h4 {
+    display: none;
+  }
+
+  .icon {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -439,7 +612,11 @@ body {
     display: none;
   }
 
-  .left_section h4 {
+  .right_section h4 {
+    display: none;
+  }
+
+  .left_section content {
     display: none;
   }
 
@@ -448,3 +625,40 @@ body {
     margin-right: auto;
   }
 }
+/* MEDIA QUERY BEGINS FOR MOBILE (320px-499px) SCREEN SIZE */
+
+@media (min-width: 320px) and (max-width: 499px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 0.1rem;
+  }
+
+  /* LEFT SECTION BEGINS */
+  .left_section,
+  .nt_cont,
+  .show_tweets,
+  .right_section {
+    display: none;
+  }
+  /* LEFT SECTION ENDS */
+
+  /* MID SECTION BEGINS*/
+
+  .mid_section .icon-header {
+    display: inline-block;
+  }
+
+  .mid_section .icon-footer {
+    display: flex;
+    padding-inline: 1.5em;
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    z-index: 100;
+    border-top: 1px solid rgba(128, 128, 128, 0.541);
+  }
+  /* MID SECTION ENDS */
+}
+
+/* MEDIA QUERY ENDS FOR MOBILE (320px-499px) SCREEN SIZE */
