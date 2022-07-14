@@ -11,7 +11,6 @@
       type="image/x-icon"
       href="img/svgs/twitter_logo_blue.svg"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -50,7 +49,7 @@
               <h2>Explore</h2>
             </div>
           </div>
-          <div class="dual_container">
+          <div class="dual_container" id="dual_container2">
             <div class="icon">
               <img src="./img/svgs/notification_icon.svg" alt="" />
             </div>
@@ -58,7 +57,7 @@
               <h2>Notifications</h2>
             </div>
           </div>
-          <div class="dual_container">
+          <div class="dual_container" id="dual_container2">
             <div class="icon">
               <img src="./img/svgs/message_icon.svg" alt="" />
             </div>
@@ -66,7 +65,7 @@
               <h2>Messages</h2>
             </div>
           </div>
-          <div class="dual_container">
+          <div class="dual_container" id="dual_container2">
             <div class="icon">
               <img src="./img/svgs/bookmark_icon.svg" alt="" />
             </div>
@@ -122,10 +121,11 @@
     <!-- MID SECTION STARTS -->
     <section class="mid_section">
       <nav>
-        <h3><a href="index.html">Home</a></h3>
-        <img src="./img/svgs/preferences.svg" alt="Preferences" />
+        <img src="img/svgs/avatar-5.svg" alt=""           style="border-radius: 50%; width: 2rem"
+        class="icon-header">
+        <h3 class="home-header"><a href="index.html">Home</a></h3>
+        <img src="./img/svgs/preferences.svg" class="star-header" alt="Preferences" />
       </nav>
-
       <div class="nt_cont">
         <img
           src="./img/svgs/avatar-7.svg"
@@ -187,7 +187,6 @@
                   @manlikeaj . 14m</span
                 >
               </p>
-
               <p>Thank you God for keeping things running smoothly.</p>
             </div>
             <a href=""><i class="fa-solid fa-ellipsis"></i></a>
@@ -468,6 +467,52 @@
             <div class="tweet_foot_icons">
               <img src="./img/svgs/like_tweet_icon.svg" alt="" />
               <p>12k</p>
+
+            </div>
+
+            <img src="./img/svgs/share_tweet_icon.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="tweet_container">
+          <div class="pre_tweet">
+            <img src="./img/svgs/retweet_icon.svg" alt="" />
+            <p>Asake Alamala Retweeted</p>
+          </div>
+          <div class="tweet_head">
+            <img
+              src="./img/svgs/avatar-4.svg"
+              alt=""
+              style="border-radius: 50%; width: 3rem; height: 3rem"
+            />
+            <div class="tweet_head_txt">
+
+              <p>Certified baddie<span> @bade__ . 4h</span></p>
+
+              <p>Signed out today, never been happier💃.</p>
+
+            </div>
+            <a href=""><i class="fa-solid fa-ellipsis"></i></a>
+          </div>
+
+          <div class="tweet_img" style="display: none">
+            <img src="" alt="" style="width: 100%; height: 100%" />
+          </div>
+
+          <div class="tweet_foot">
+            <div class="tweet_foot_icons">
+              <img src="./img/svgs/comment_icon.svg" alt="" />
+              <p>12</p>
+            </div>
+
+            <div class="tweet_foot_icons">
+              <img src="./img/svgs/retweet_icon.svg" alt="" />
+              <p>10</p>
+            </div>
+
+            <div class="tweet_foot_icons">
+              <img src="./img/svgs/like_tweet_icon.svg" alt="" />
+              <p>17</p>
             </div>
 
             <img src="./img/svgs/share_tweet_icon.svg" alt="" />
@@ -529,6 +574,24 @@
 
               <p>This weather isn't for the weak.</p>
             </div>
+
+            <img src="./img/svgs/share_tweet_icon.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="tweet_container">
+          <div class="tweet_head">
+            <img
+              src="./img/svgs/avatar-3.svg"
+              alt=""
+              style="border-radius: 50%; width: 3rem; height: 3rem"
+            />
+            <div class="tweet_head_txt">
+              <p>Slams<span> @slammerr . Jun 12</span></p>
+
+              <p>This weather isn't for the weak.</p>
+            </div>
+
             <a href=""><i class="fa-solid fa-ellipsis"></i></a>
           </div>
 
@@ -556,11 +619,20 @@
           </div>
         </div>
       </div>
+
+      <nav class="icon-footer">
+        <img src="img/svgs/home_icon.svg" alt="home-icon" >
+        <img src="img/svgs/search_icon.svg" alt="search-icon">
+        <img src="img/svgs/notification_icon.svg" alt="notification-icon">
+        <img src="img/svgs/message_icon.svg" alt="message-icon">
+      </nav>
     </section>
+
+    
     <!-- MID SECTION ENDS -->
 
     <!-- RIGHT section starts -->
-    <section class="right_section">
+    <section class="right_section" >
       <div class="widgets">
         <div class="widgets_input">
           <input
@@ -636,12 +708,12 @@
             ><img
               src="./img/svgs/avatar-5.svg"
               alt="avatar-5"
-              style="width: 2.5rem"
+              style="border-radius: 50%; width: 2.5rem;"
           /></a>
           <div>
             <a href="#"
               ><h4 class="follow-name" style="font-family: Arial, FontAwesome">
-                Crypto.com NFT &#Xf0a3;
+                Crypto.com NFT <span style="color:aqua;"> &#Xf0a3;</span>
               </h4></a
             >
             <a href="#"><p class="follow-username">@cryptocomnft</p></a>
@@ -663,7 +735,7 @@
           <div>
             <a href="#"
               ><h4 class="follow-name" style="font-family: Arial, FontAwesome">
-                Sodiq 🎭 The Lvzy
+                Sodiq <span style="color:gold;">🎭 </span> The Lvzy
               </h4></a
             >
             <a href="#"><p class="follow-username">@cryptocomnft</p></a>
@@ -676,15 +748,13 @@
             ><img
               src="./img/svgs/avatar-2.svg"
               alt="avatar-2"
-              style="width: 2.5rem"
+              style="width: 2.8rem"
           /></a>
           <div>
             <a href="#"
               ><h4 class="follow-name" style="font-family: Arial, FontAwesome">
-                Crypto.com NFT
-              </h4></a
-            >
-            <a href="#"><p class="follow-username">@cryptocomnft</p></a>
+                  Jimzz_r Ezeh </h4></a>
+            <a href="#"><p class="follow-username">@jimzz_r</p></a>
           </div>
           <button class="follow-button-align">Follow</button>
         </div>
