@@ -661,3 +661,32 @@ h3 {
 }
 
 /* MEDIA QUERY ENDS FOR MOBILE (320px-499px) SCREEN SIZE */
+
+/* Media query for mobile (1005px-1281px) and (500px-1004px) Screen size begins*/
+@media (min-width: 1005) and (max-width: 1281px) {
+  .left_section h2,
+  .left_section h4,
+  .left_section p {
+    display: none;
+  }
+  .icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1004px) {
+  .right_section,
+  .left_section h4,
+  .left_section h2 {
+    display: none;
+  }
+
+  .icon,
+  .twitter_logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Media query for mobile (1005px-1281px) and (500px-1004px) Screen size ends  */
