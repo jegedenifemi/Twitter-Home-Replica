@@ -10,7 +10,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 2.3fr 1.5fr;
   margin-inline: 4rem 2.5rem;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* LEFT SECTION BEGINS */
@@ -391,7 +391,7 @@ body {
      4. hid sub-container scroll bar
   */
 
-.right_section .right_section .trends-for-you-block:hover {
+.right_section .trends-for-you-block:hover {
   cursor: pointer;
   background-color: rgba(99, 104, 107, 0.141);
 }
@@ -439,6 +439,9 @@ body {
   justify-content: space-between;
   font-size: 12px;
   color: rgb(99, 101, 106);
+}
+.trends-for-you-information > p {
+  font-weight: 600;
 }
 .trends-for-you-information > i,
 .user_container > a > i {
@@ -557,6 +560,7 @@ body {
 
 .container-link {
   padding: 1em;
+  margin-bottom: 4rem;
 }
 
 .container-link a {
@@ -593,7 +597,7 @@ body {
   border-radius: 12px 12px 0 0;
   position: fixed;
   bottom: 0px;
-  width: 27%;
+  width: 28.7%;
 }
 .coll_head {
   display: flex;
