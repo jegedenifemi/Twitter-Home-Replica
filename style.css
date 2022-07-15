@@ -97,6 +97,10 @@ body {
   display : none;
 }
 
+.feather-dp{
+  display: none;
+}
+
 /* LEFT SECTION ENDS */
 
 /* MID SECTION BEGINS*/
@@ -579,7 +583,12 @@ body {
   margin-left: 5%;
 }
 h3 {
-  margin-left: 12%;
+  /*margin-left: 12%;*/
+  margin-left: 5%;
+}
+
+.fa-solid{
+  margin-right: 15px;
 }
 
 .collapsible:hover + .content {
@@ -590,15 +599,23 @@ h3 {
   justify-content: space-between;
   background-color: black;
   color: white;
-  border: 1px solid #fff;
+  /*border: 1px solid #fff;*/
   padding-top: 6px;
   padding-bottom: 6px;
   border-radius: 12px;
+  box-shadow:  1px 1px 10px 1px #d7d7d7;
+
+  /* 1. on collapse took out border n added box shadow
+     2. added a space between messeage & arrow icon using &nsbp;
+     3. changes h3 margin left from 12% to 5%
+     4. added space margin right: fa-solid (arrow icon)
+  */
+
 }
 
 /* RIGHT PANEL ENDS*/
 
-@media only screen and (max-width: 1281px) {
+/*@media only screen and (max-width: 1281px) {
   .left_section h2 {
     display: none;
   }
@@ -647,6 +664,10 @@ h3 {
     
   }
 }
+
+/*
+
+
 /* MEDIA QUERY BEGINS FOR MOBILE (320px-499px) SCREEN SIZE */
 @media (min-width: 320px) and (max-width: 499px) {
   body {
@@ -694,6 +715,23 @@ h3 {
   .dual_container > div:nth-child(2) {
     display: none;
   }
+
+  .dual_container {
+    padding: 0.4em;
+  }
+
+  .feather-dp .dp{
+    margin-top: 2em;
+  }
+
+  .swapicons > img:nth-child(2),
+  .hide_icons {
+    display: none;
+  }
+  .swapicons > img:nth-child(1) {
+    display: inline-block;
+  }
+
   nav .twitter_logo {
     padding-inline: 35%;
   }
@@ -701,11 +739,117 @@ h3 {
     margin-left: auto;
     margin-right: auto;
   }
-  .container > img {
+
+  /*.container > img {
     display: block;
     margin: 0 auto;
     
+  }*/
+
+  .dual_container .icon img{
+    width: 1.8em;
   }
+
+  .feather-dp{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3.5em; 
+    justify-content: space-between;
+  }
+
+  .user_container{
+    display: none;
+  }
+
+  .follow-content .follow-name {
+    padding-bottom: 0em;
+  }
+
+  .follow-content p {
+    padding-bottom: 0em;
+  }
+
+  .follow-content .follow-button-align {
+    margin: 1rem;
+    border-radius: 20px;
+    padding: 0.3em;
+    margin-top: 0.3em;
+  }
+
+  .follow-content .username{
+    display: none;
+  }
+
+.button{
+  display: none;
+}
+ 
+.container .dual_container:hover {
+  display: none;
+}
+
+#dual_container2:hover {
+  font-display: none;
+}
+
+}
+
+@media (min-width: 1071px) and (max-width: 1090px) {
+  
+  nav .twitter_logo {
+    padding-inline: 38%;
+  }
+  
+  .feather-dp{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3.8em; 
+    justify-content: space-between;
+  }
+
+}
+
+@media (min-width: 1091px) and (max-width: 1200px) {
+  
+  nav .twitter_logo {
+    padding-inline: 40%;
+  }
+  
+  .feather-dp{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4.2em; 
+    justify-content: space-between;
+  }
+
+}
+
+@media (min-width: 1151px) and (max-width: 1200px) {
+   .badge{ 
+    display: none;
+   }
+  .feather-dp{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4.6em; 
+    justify-content: space-between;
+  }
+
+}
+
+@media (min-width: 1201px) and (max-width: 1281px) {
+  
+  nav .twitter_logo {
+    padding-inline: 40%;
+  }
+  
+  .feather-dp{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5.1em; 
+    justify-content: space-between;
+  }
+
 }
 
 @media (min-width: 500px) and (max-width: 1004px) {
@@ -753,5 +897,8 @@ h3 {
     margin: 0 auto;
   }
 }
+
+
+
 
 /* Media query for mobile (1005px-1281px) and (500px-1004px) Screen size ends  */
