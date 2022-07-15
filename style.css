@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid rgb(194, 31, 31); */
+  border: 1px solid rgb(194, 31, 31);
 }
 body {
   background-color: black;
@@ -34,14 +34,14 @@ body {
   position: relative;
   height: 100%;
 }
-.container > button {
+.button {
   background-color: rgb(29, 155, 240);
   width: 100%;
   padding: 1rem;
   margin-top: 0.5em;
   border-radius: 30px;
 }
-.container > button > a {
+.button > a {
   text-decoration: none;
   color: white;
   font-size: larger;
@@ -58,6 +58,10 @@ body {
   font-size: 20px;
   font-weight: 400;
 }
+.swapicons > img:nth-child(2) {
+  display: none;
+}
+
 .user_container {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
@@ -111,6 +115,9 @@ body {
   align-items: center;
   width: 100%;
   justify-content: space-between;
+}
+.home-header {
+  margin-left: 0;
 }
 .mid_section nav a {
   text-decoration: none;
@@ -657,17 +664,22 @@ h3 {
     z-index: 100;
     border-top: 1px solid rgba(128, 128, 128, 0.541);
   }
+
   /* MID SECTION ENDS */
 }
 
 /* MEDIA QUERY ENDS FOR MOBILE (320px-499px) SCREEN SIZE */
 
 /* Media query for mobile (1005px-1281px) and (500px-1004px) Screen size begins*/
-@media (min-width: 1005) and (max-width: 1281px) {
+@media (min-width: 1005px) and (max-width: 1281px) {
   .left_section h2,
   .left_section h4,
-  .left_section p {
+  .left_section p,
+  .dual_container > div:nth-child(2) {
     display: none;
+  }
+  nav .twitter_logo {
+    padding-inline: 35%;
   }
   .icon {
     margin-left: auto;
@@ -678,14 +690,41 @@ h3 {
 @media (min-width: 500px) and (max-width: 1004px) {
   .right_section,
   .left_section h4,
-  .left_section h2 {
+  .dual_container > div:nth-child(2) {
     display: none;
   }
-
-  .icon,
-  .twitter_logo {
-    margin-left: auto;
-    margin-right: auto;
+  nav .twitter_logo {
+    padding-inline: 35%;
+  }
+  .left_section {
+    padding-inline-end: 0;
+  }
+  .container img {
+    width: 2.4rem;
+  }
+  .twitter_logo a img {
+    width: 4.3rem;
+  }
+  .swapicons > img:nth-child(1),
+  .hide_icons {
+    display: none;
+  }
+  .swapicons > img:nth-child(2) {
+    display: inline-block;
+  }
+  .button {
+    margin: 0 auto;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    padding: 1.5rem;
+  }
+  .button {
+    display: none;
+  }
+  .container > img {
+    display: inline-block;
+    margin: 0 auto;
   }
 }
 
