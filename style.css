@@ -735,6 +735,13 @@ body {
 
 /* Media query for mobile (1005px-1281px) and (500px-1004px) Screen size begins*/
 @media (min-width: 1005px) and (max-width: 1281px) {
+  body {
+    margin-inline-start: 0;
+    grid-template-columns: 0.5fr 2.1fr 1.3fr;
+  }
+  .left_section {
+    padding-inline-end: 0;
+  }
   .left_section h2,
   .left_section h4,
   .left_section p,
@@ -750,27 +757,22 @@ body {
     margin-top: 2em;
   }
 
-  .swapicons > img:nth-child(2),
-  .hide_icons {
+  .swapicons > img:nth-child(2) {
     display: none;
   }
   .swapicons > img:nth-child(1) {
     display: inline-block;
   }
 
-  nav .twitter_logo {
-    padding-inline: 35%;
-  }
-  .icon {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /*.container > img {
-    display: block;
+  nav .twitter_logo,
+  .dual_container {
+    width: fit-content;
     margin: 0 auto;
-    
-  }*/
+  }
+  /* 1 adjusted grid column values to make left section smaller
+     2 removed code to hide .hide_icons at this view
+     3 set a width, and margin 0 auto to .twitter_logo and .dual_container to center align icons
+     4 removed padding-inline set to .twitter_logo at different widths*/
 
   .dual_container .icon img {
     width: 1.8em;
@@ -783,9 +785,15 @@ body {
     justify-content: space-between;
   }
 
-  .user_container {
+  .user_container > a,
+  .user_container_txt {
     display: none;
   }
+  .user_container {
+    margin: 0 35%;
+  }
+  /* 1. hid only .user_container_txt and menu icon (only the user image is left) 
+     2. set margin to .user_container to center align user image*/
 
   .follow-content .follow-name {
     padding-bottom: 0em;
@@ -820,10 +828,6 @@ body {
 }
 
 @media (min-width: 1071px) and (max-width: 1090px) {
-  nav .twitter_logo {
-    padding-inline: 38%;
-  }
-
   .feather-dp {
     display: flex;
     flex-direction: column;
@@ -833,10 +837,6 @@ body {
 }
 
 @media (min-width: 1091px) and (max-width: 1200px) {
-  nav .twitter_logo {
-    padding-inline: 40%;
-  }
-
   .feather-dp {
     display: flex;
     flex-direction: column;
@@ -858,10 +858,6 @@ body {
 }
 
 @media (min-width: 1201px) and (max-width: 1281px) {
-  nav .twitter_logo {
-    padding-inline: 40%;
-  }
-
   .feather-dp {
     display: flex;
     flex-direction: column;
