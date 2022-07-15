@@ -709,6 +709,11 @@ h3 {
 }
 
 @media (min-width: 500px) and (max-width: 1004px) {
+  body {
+    grid-template-columns: 0.5fr 2fr;
+  }
+  
+  
   .right_section,
   .left_section h4,
   .dual_container > div:nth-child(2) {
