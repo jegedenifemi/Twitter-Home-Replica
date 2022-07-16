@@ -1,7 +1,7 @@
 # Twitter-Home-Replica
 This work is a clone of the [Twitter](https://twitter.com/) Home.
 ## Description 
-A responsive single page replica of the Twitter Home page built using HTML & CSS by a team of 5. The task was done to shrpen our individual collaborative skills.
+A responsive single page replica of the Twitter Home page built using HTML & CSS by a team of 5. The task was done to sharpen our individual collaborative skills.
 ## Link
 Live view of the project [here](https://jegedenifemi.github.io/Twitter-Home-Replica/)
 ## credit
