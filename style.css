@@ -34,19 +34,6 @@ body {
   position: relative;
   height: 100%;
 }
-.button {
-  background-color: rgb(29, 155, 240);
-  width: 100%;
-  padding: 1rem;
-  margin-top: 0.5em;
-  border-radius: 30px;
-}
-.button > a {
-  text-decoration: none;
-  color: white;
-  font-size: larger;
-  font-weight: 600;
-}
 .dual_container {
   display: flex;
   flex-direction: row;
@@ -61,7 +48,27 @@ body {
 .swapicons > img:nth-child(2) {
   display: none;
 }
-
+.button {
+  background-color: rgb(29, 155, 240);
+  width: 100%;
+  padding: 1rem;
+  margin-top: 0.5em;
+  border-radius: 30px;
+}
+.button > a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  font-weight: 600;
+}
+.feather {
+  display: none;
+  padding: 1rem;
+  width: fit-content;
+  border-radius: 100%;
+  background-color: rgb(29, 155, 240);
+  margin-inline: auto 1rem;
+}
 .user_container {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
@@ -96,11 +103,6 @@ body {
 .container > img {
   display: none;
 }
-
-.feather-dp {
-  display: none;
-}
-
 /* LEFT SECTION ENDS */
 
 /* MID SECTION BEGINS*/
@@ -192,6 +194,7 @@ body {
 }
 .nt_media > button {
   background-color: rgb(29, 155, 240);
+  opacity: 0.6;
   color: white;
   font-weight: 500;
   font-size: medium;
@@ -492,7 +495,6 @@ body {
   grid-template-columns: 1fr 5fr 3fr;
   gap: 1rem;
   padding: 10px 15px;
-  /*margin-left: -1em;*/
 }
 
 .follow-button {
@@ -644,27 +646,7 @@ body {
 
 /* RIGHT PANEL ENDS*/
 
-/*@media only screen and (max-width: 1281px) {
-  .left_section h2 {
-    display: none;
-  }
-
-  .right_section h4,
-  .button {
-    display: none;
-  }
-  .container > img {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .icon {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (max-width: 1004px) {
+/*@media screen and (max-width: 1004px) {
   .right_section {
     display: none;
   }
@@ -730,10 +712,87 @@ body {
 
   /* MID SECTION ENDS */
 }
+/* MEDIA QUERY ENDS FOR (320px-499px) SCREEN SIZE */
 
-/* MEDIA QUERY ENDS FOR MOBILE (320px-499px) SCREEN SIZE */
+/* MEDIA QUERY BEGINS FOR (500px-1004px) SCREEN SIZE */
+@media (min-width: 500px) and (max-width: 1004px) {
+  body {
+    grid-template-columns: 0.4fr 2fr;
+    margin: 0;
+  }
+  .left_section {
+    padding-inline-end: 0;
+  }
+  .left_section h2,
+  .left_section h4,
+  .left_section p,
+  .dual_container > div:nth-child(2) {
+    display: none;
+  }
+  .swapicons > img:nth-child(2) {
+    display: none;
+  }
+  .swapicons > img:nth-child(1) {
+    display: inline-block;
+  }
+  nav .twitter_logo,
+  .dual_container {
+    width: fit-content;
+    margin-inline: auto 1.5rem;
+    margin-bottom: 1vh;
+  }
+  .container img {
+    width: 2.2rem;
+  }
+  .twitter_logo a img {
+    width: 3.8rem;
+  }
+  .swapicons > img:nth-child(1),
+  .hide_icons {
+    display: none;
+  }
+  .swapicons > img:nth-child(2) {
+    display: inline-block;
+  }
+  .button {
+    display: none;
+  }
+  .feather {
+    display: block;
+  }
+  .container > img {
+    display: block;
+    margin: 0 auto;
+  }
+  .user_container > a,
+  .user_container_txt {
+    display: none;
+  }
+  .user_container {
+    width: 30%;
+    right: 2rem;
+    margin-inline: auto 0;
+  }
+  .mid_section {
+    max-width: 619px;
+  }
+  .collapsible {
+    display: none;
+  }
+  /* 1. hid only .user_container_txt and menu icon (only the user image is left) 
+     2. set margin to .user_container to center align user image
+     3  hid messages card (.collapsible)
+     4  removed .dual_container padding*/
+}
+@media (max-width: 746px) {
+  .nt_media_icons > img:nth-child(3),
+  .nt_media_icons > img:nth-child(5) {
+    display: none;
+  }
+}
+/* MEDIA QUERY ENDS FOR (500px-1004px) SCREEN SIZE */
 
-/* Media query for mobile (1005px-1281px) and (500px-1004px) Screen size begins*/
+/* MEDIA QUERY BEGINS FOR (1005px-1281px) SCREEN SIZE */
 @media (min-width: 1005px) and (max-width: 1281px) {
   body {
     margin-inline-start: 0;
@@ -753,8 +812,9 @@ body {
     padding: 0.4em;
   }
 
-  .feather-dp .dp {
-    margin-top: 2em;
+  .feather {
+    display: block;
+    margin-inline: auto 0.7rem;
   }
 
   .swapicons > img:nth-child(2) {
@@ -767,7 +827,7 @@ body {
   nav .twitter_logo,
   .dual_container {
     width: fit-content;
-    margin: 0 auto;
+    margin-inline: auto 1.5rem;
   }
   /* 1 adjusted grid column values to make left section smaller
      2 removed code to hide .hide_icons at this view
@@ -777,20 +837,14 @@ body {
   .dual_container .icon img {
     width: 1.8em;
   }
-
-  .feather-dp {
-    display: flex;
-    flex-direction: column;
-    margin-left: 3.5em;
-    justify-content: space-between;
-  }
-
   .user_container > a,
   .user_container_txt {
     display: none;
   }
   .user_container {
-    margin: 0 35%;
+    width: 30%;
+    right: 2rem;
+    margin-inline: auto 0;
   }
   /* 1. hid only .user_container_txt and menu icon (only the user image is left) 
      2. set margin to .user_container to center align user image*/
@@ -827,88 +881,4 @@ body {
   }
 }
 
-@media (min-width: 1071px) and (max-width: 1090px) {
-  .feather-dp {
-    display: flex;
-    flex-direction: column;
-    margin-left: 3.8em;
-    justify-content: space-between;
-  }
-}
-
-@media (min-width: 1091px) and (max-width: 1200px) {
-  .feather-dp {
-    display: flex;
-    flex-direction: column;
-    margin-left: 4.2em;
-    justify-content: space-between;
-  }
-}
-
-@media (min-width: 1151px) and (max-width: 1200px) {
-  .badge {
-    display: none;
-  }
-  .feather-dp {
-    display: flex;
-    flex-direction: column;
-    margin-left: 4.6em;
-    justify-content: space-between;
-  }
-}
-
-@media (min-width: 1201px) and (max-width: 1281px) {
-  .feather-dp {
-    display: flex;
-    flex-direction: column;
-    margin-left: 5.1em;
-    justify-content: space-between;
-  }
-}
-
-@media (min-width: 500px) and (max-width: 1004px) {
-  body {
-    grid-template-columns: 0.5fr 2fr;
-  }
-
-  .right_section,
-  .left_section h4,
-  .dual_container > div:nth-child(2) {
-    display: none;
-  }
-  nav .twitter_logo {
-    padding-inline: 35%;
-  }
-  .left_section {
-    padding-inline-end: 0;
-  }
-  .container img {
-    width: 2.4rem;
-  }
-  .twitter_logo a img {
-    width: 4.3rem;
-  }
-  .swapicons > img:nth-child(1),
-  .hide_icons {
-    display: none;
-  }
-  .swapicons > img:nth-child(2) {
-    display: inline-block;
-  }
-  .button {
-    margin: 0 auto;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    padding: 1.5rem;
-  }
-  .button {
-    display: none;
-  }
-  .container > img {
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-/* Media query for mobile (1005px-1281px) and (500px-1004px) Screen size ends  */
+/* MEDIA QUERY ENDS FOR (1005px-1281px) SCREEN SIZE */
